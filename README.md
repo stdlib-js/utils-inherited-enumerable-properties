@@ -24,7 +24,23 @@ limitations under the License.
 
 > Return an array of an object's inherited enumerable property names and [symbols][@stdlib/symbol/ctor].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-inherited-enumerable-properties
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
@@ -33,7 +49,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import inheritedEnumerableProperties from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-enumerable-properties@deno/mod.js';
+var inheritedEnumerableProperties = require( '@stdlib/utils-inherited-enumerable-properties' );
 ```
 
 #### inheritedEnumerableProperties( obj\[, level] )
@@ -43,7 +59,7 @@ Returns an `array` of an object's inherited enumerable property names and [symbo
 <!-- eslint-disable id-length -->
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
+var defineProperty = require( '@stdlib/utils-define-property' );
 
 function Foo() {
     this.a = 'b';
@@ -62,8 +78,8 @@ By default, the function walks an object's entire prototype chain. To limit the 
 <!-- eslint-disable id-length -->
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
-import inherit from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherit@deno/mod.js';
+var defineProperty = require( '@stdlib/utils-define-property' );
+var inherit = require( '@stdlib/utils-inherit' );
 
 function Bar() {
     return this;
@@ -108,10 +124,10 @@ var pros = inheritedEnumerableProperties( f, 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@deno/mod.js';
-import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
-import inheritedEnumerableProperties from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-enumerable-properties@deno/mod.js';
+var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
+var Symbol = require( '@stdlib/symbol-ctor' );
+var defineProperty = require( '@stdlib/utils-define-property' );
+var inheritedEnumerableProperties = require( '@stdlib/utils-inherited-enumerable-properties' );
 
 var hasSymbols = hasSymbolSupport();
 var props;
@@ -176,12 +192,12 @@ console.log( props );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/enumerable-properties`][@stdlib/utils/enumerable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property names and symbols.</span>
--   <span class="package-name">[`@stdlib/utils/enumerable-properties-in`][@stdlib/utils/enumerable-properties-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable property names and symbols.</span>
--   <span class="package-name">[`@stdlib/utils/inherited-enumerable-property-symbols`][@stdlib/utils/inherited-enumerable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited enumerable symbol properties.</span>
--   <span class="package-name">[`@stdlib/utils/inherited-keys`][@stdlib/utils/inherited-keys]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited enumerable property names.</span>
--   <span class="package-name">[`@stdlib/utils/inherited-nonenumerable-properties`][@stdlib/utils/inherited-nonenumerable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited non-enumerable property names and symbols.</span>
--   <span class="package-name">[`@stdlib/utils/inherited-properties`][@stdlib/utils/inherited-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils-enumerable-properties`][@stdlib/utils/enumerable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils-enumerable-properties-in`][@stdlib/utils/enumerable-properties-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils-inherited-enumerable-property-symbols`][@stdlib/utils/inherited-enumerable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited enumerable symbol properties.</span>
+-   <span class="package-name">[`@stdlib/utils-inherited-keys`][@stdlib/utils/inherited-keys]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils-inherited-nonenumerable-properties`][@stdlib/utils/inherited-nonenumerable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited non-enumerable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils-inherited-properties`][@stdlib/utils/inherited-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited property names and symbols.</span>
 
 </section>
 
@@ -196,7 +212,7 @@ console.log( props );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -258,21 +274,21 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [ecma-262-for-in]: https://262.ecma-international.org/5.1/#sec-12.6.4
 
-[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor/tree/deno
+[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/utils/enumerable-properties]: https://github.com/stdlib-js/utils-enumerable-properties/tree/deno
+[@stdlib/utils/enumerable-properties]: https://github.com/stdlib-js/utils-enumerable-properties
 
-[@stdlib/utils/enumerable-properties-in]: https://github.com/stdlib-js/utils-enumerable-properties-in/tree/deno
+[@stdlib/utils/enumerable-properties-in]: https://github.com/stdlib-js/utils-enumerable-properties-in
 
-[@stdlib/utils/inherited-enumerable-property-symbols]: https://github.com/stdlib-js/utils-inherited-enumerable-property-symbols/tree/deno
+[@stdlib/utils/inherited-enumerable-property-symbols]: https://github.com/stdlib-js/utils-inherited-enumerable-property-symbols
 
-[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils-inherited-keys/tree/deno
+[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils-inherited-keys
 
-[@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils-inherited-nonenumerable-properties/tree/deno
+[@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils-inherited-nonenumerable-properties
 
-[@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils-inherited-properties/tree/deno
+[@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils-inherited-properties
 
 <!-- </related-links> -->
 
