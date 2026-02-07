@@ -46,6 +46,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+inheritedEnumerableProperties = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-enumerable-properties@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-inherited-enumerable-properties/tags). For example,
+
+```javascript
 inheritedEnumerableProperties = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-enumerable-properties@v0.1.1-umd/browser.js' )
 ```
 
@@ -58,7 +63,7 @@ var inheritedEnumerableProperties = require( 'path/to/vendor/umd/utils-inherited
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-enumerable-properties@v0.1.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-enumerable-properties@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -149,7 +154,7 @@ var pros = inheritedEnumerableProperties( f, 1 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-enumerable-properties@v0.1.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-enumerable-properties@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
