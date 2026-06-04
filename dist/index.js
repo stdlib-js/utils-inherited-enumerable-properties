@@ -1,0 +1,5 @@
+"use strict";var q=function(n,e){return function(){return e||n((e={exports:{}}).exports,e),e.exports}};var h=q(function(O,g){
+var l=require('@stdlib/constants-float64-max-safe-integer/dist'),P=require('@stdlib/assert-is-positive-integer/dist').isPrimitive,p=require('@stdlib/assert-is-enumerable-property/dist'),c=require('@stdlib/utils-property-names/dist'),w=require('@stdlib/utils-property-symbols/dist'),f=require('@stdlib/utils-get-prototype-of/dist'),m=require('@stdlib/assert-has-own-property/dist'),y=require('@stdlib/error-tools-fmtprodmsg/dist');function E(n,e){var u,s,i,a,o,v,r,t;if(arguments.length>1){if(!P(e))throw new TypeError(y('1UV45',e));o=e}else o=l;if(n==null)return[];for(i=f(n),u=[],s={},v=1;i&&v<=o;){for(a=c(i),t=0;t<a.length;t++)r=a[t],m(s,r)===!1&&p(i,r)&&u.push(r),s[r]=!0;for(a=w(i),t=0;t<a.length;t++)r=a[t],m(s,r)===!1&&p(i,r)&&u.push(r),s[r]=!0;i=f(i),v+=1}return u}g.exports=E
+});var b=h();module.exports=b;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
