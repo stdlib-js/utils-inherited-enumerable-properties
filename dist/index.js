@@ -1,5 +1,0 @@
-"use strict";var q=function(s,e){return function(){try{return e||s((e={exports:{}}).exports,e),e.exports}catch(a){throw (e=0, a)}};};var h=q(function(O,g){
-var l=require('@stdlib/constants-float64-max-safe-integer/dist'),P=require('@stdlib/assert-is-positive-integer/dist').isPrimitive,p=require('@stdlib/assert-is-enumerable-property/dist'),c=require('@stdlib/utils-property-names/dist'),w=require('@stdlib/utils-property-symbols/dist'),f=require('@stdlib/utils-get-prototype-of/dist'),m=require('@stdlib/assert-has-own-property/dist'),y=require('@stdlib/error-tools-fmtprodmsg/dist');function E(s,e){var a,u,i,n,o,v,r,t;if(arguments.length>1){if(!P(e))throw new TypeError(y('1UV45',e));o=e}else o=l;if(s==null)return[];for(i=f(s),a=[],u={},v=1;i&&v<=o;){for(n=c(i),t=0;t<n.length;t++)r=n[t],m(u,r)===!1&&p(i,r)&&a.push(r),u[r]=!0;for(n=w(i),t=0;t<n.length;t++)r=n[t],m(u,r)===!1&&p(i,r)&&a.push(r),u[r]=!0;i=f(i),v+=1}return a}g.exports=E
-});var b=h();module.exports=b;
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
